@@ -3,17 +3,14 @@ name: "Publish to PyPI."
 on:
   push:
     tags: ["*.*.*"]
+
 jobs:
   publush:
-    name: Publish to PyPI on new release. 
-    runs-on: ubuntu-latest
+    name: Publish new version
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: publish
-        id: add-git-tag
-        run: |
-            echo "FOO"
 
