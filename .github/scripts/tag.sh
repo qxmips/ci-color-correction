@@ -23,6 +23,7 @@ function add_github_tag() {
       git tag $NEW_VERSION
       #git push origin $NEW_VERSION
       git push --tags
+      git push
       exit 0
     else
      echo "Tag already exists.."
