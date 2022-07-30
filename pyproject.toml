@@ -1,7 +1,7 @@
 [project]
 name = "color-correction"
 requires-python = ">=3.8"
-version = "0.0.7"
+version = "0.0.8"
 dependencies = [
     "hydra-core == 1.1.2",
     "numpy == 1.22.3",
