@@ -1,9 +1,8 @@
 ---
 name: "Publish to PyPI."
-on:  
+on:
   push:
-    tags:
-      - '*'
+    tags: ["*.*.*"]
 jobs:
   publush:
     name: Publish to PyPI on new release. 
