@@ -1,12 +1,12 @@
 ---
-name: "Publish to PyPI on new release."
+name: "Publish to PyPI."
 on:  
   push:
     tags:
       - '*'
 jobs:
   publush:
-    name: Publish new version
+    name: Publish to PyPI on new release. 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
