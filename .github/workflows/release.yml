@@ -17,4 +17,6 @@ jobs:
         id: add-git-tag
         run: |
           bash  .github/scripts/tag.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
         if: github.ref == 'refs/heads/master'
