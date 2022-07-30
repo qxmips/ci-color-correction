@@ -21,9 +21,7 @@ function add_github_tag() {
     if [ -z "`git tag -l ${version}`" ];then
       echo "tagging with ${version}"
       git tag $NEW_VERSION
-      #git push origin $NEW_VERSION
-      git push --tags
-      git push
+      git push origin --tags
       exit 0
     else
      echo "Tag already exists.."
